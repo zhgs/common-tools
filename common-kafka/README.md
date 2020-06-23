@@ -1,3 +1,6 @@
+### 原理
+https://www.cnblogs.com/sujing/p/10960832.html
+
 ## 前提准备
 * 1、java环境
 * 2、zookeeper环境， 
