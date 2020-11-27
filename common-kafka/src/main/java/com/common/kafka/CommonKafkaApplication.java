@@ -12,11 +12,15 @@ public class CommonKafkaApplication {
     @Autowired
     private Producter producter;
 
+    @Autowired
+    private ProducterTest producterTest;
+
     @PostConstruct
     public void init(){
-        for(int i=0;i<100;i++){
-            producter.send("afs"+i,i);
-        }
+//        for(int i=0;i<100;i++){
+//            producter.send("afs"+i,i);
+//        }
+        producterTest.process();
     }
 
     public static void main(String[] args) {
